@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Peta Desa Merbung</title>
+
+  <link rel="icon" href="https://1.bp.blogspot.com/-3fOVmtHrPkg/W2lzDkbSONI/AAAAAAAAAY0/qdMMoN8b46gW1pNe7i7IHhXXpi9UXCzcQCLcBGAs/s1600/Logo%2BVector%2BKabupaten%2BKlaten%2BCDR%2Bdan%2BPNG.png" type="image/png" sizes="192x192">
+  <link rel="stylesheet" href="/src/css/global.css">
+  <link rel="stylesheet" href="src/css/home.css">
+  <script type="module" src="/src/js/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  >
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="mx-auto w-full max-w-7xl px-4 py-4 sm:px-6 lg:flex lg:items-center lg:gap-2 lg:px-8">
+      <div class="navbar-start items-center justify-between max-lg:w-full">
+        <a class="text-base-content flex items-center gap-3 text-xl font-bold lg:hidden" href="#">
+          <img
+            src="https://1.bp.blogspot.com/-3fOVmtHrPkg/W2lzDkbSONI/AAAAAAAAAY0/qdMMoN8b46gW1pNe7i7IHhXXpi9UXCzcQCLcBGAs/s1600/Logo%2BVector%2BKabupaten%2BKlaten%2BCDR%2Bdan%2BPNG.png"
+            class="size-8" alt="brand-logo" />
+          Desa Merbung
+        </a>
+
+        <div class="flex items-center lg:hidden">
+
+          <button type="button" class="collapse-toggle btn btn-outline btn-secondary btn-square"
+            data-collapse="#navbar-block-5" aria-controls="navbar-block-5" aria-label="Toggle navigation">
+            <span class="icon-[tabler--menu-2] collapse-open:hidden size-5.5" onclick="togglemenu()"></span>
+            <span class="icon-[tabler--x] collapse-open:block hidden size-5.5"></span>
+          </button>
+
+        </div>
+      </div>
+      <div class="flex items-center lg:hidden">
+
+
+
+        <ul id="sidebar" class="bg-base-100 text-base-content shadow-md">
+          <li>
+            <button id="themeToggleSidebar" class="flex items-center gap-2">
+              <span id="themeIconSidebar" class="icon-[tabler--sun] text-xl"></span>
+              <span id="themeLabelSidebar" class="text-sm font-medium">Light</span>
+            </button>
+          </li>
+          <li class="hover:text-primary"><a href="#peta">Profil</a></li>
+          <li class="hover:text-primary">Umkm</li>
+          <li class="hover:text-primary">About</li>
+          <li class="hover:text-primary">Contact</li>
+        </ul>
+      </div>
+
+
+
+      <div id="navbar-block-5"
+        class="lg:navbar-center transition-height collapse hidden grow overflow-hidden duration-300 lg:flex">
+        <div
+          class="text-base-content flex gap-6 text-base font-medium max-lg:mt-4 max-lg:flex-col lg:items-center lg:gap-16">
+          <a href="#Peta" class="hover:text-primary">Peta</a>
+          <a href="#Umkm" class="hover:text-primary">Umkm</a>
+          <a class="text-base-content flex items-center gap-3 text-xl font-bold max-lg:hidden">
+            <img
+              src="https://1.bp.blogspot.com/-3fOVmtHrPkg/W2lzDkbSONI/AAAAAAAAAY0/qdMMoN8b46gW1pNe7i7IHhXXpi9UXCzcQCLcBGAs/s1600/Logo%2BVector%2BKabupaten%2BKlaten%2BCDR%2Bdan%2BPNG.png"
+              class="size-8" alt="brand-logo" />
+            Desa Merbung
+          </a>
+          <a href="#FAQ" class="hover:text-primary">FAQ</a>
+          <a href="#Contact" class="hover:text-primary">Contact</a>
+
+          <div class="dropdown relative inline-flex [--offset:24]">
+            <button id="dropdown-theme" type="button" class="dropdown-toggle btn btn-sm btn-square btn-text"
+              aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+              <span id="icon-system" class="icon-[tabler--sun-moon] size-4.5"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-open:opacity-100 z-50 hidden w-full max-w-50" role="menu"
+              aria-orientation="vertical" aria-labelledby="dropdown-theme">
+              <li>
+                <input id="radio-light-theme" type="radio" name="theme-dropdown"
+                  class=" btn btn-text w-full justify-start" aria-label="Light" value="mintlify" />
+              </li>
+              <li>
+                <input id="radio-dark-theme" type="radio" name="theme-dropdown"
+                  class=" btn btn-text w-full justify-start" aria-label="Dark" value="spotify" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end max-lg:hidden">
+
+      </div>
+    </div>
+  </nav>
+  <div class="bg-base-100 py-8 sm:py-16 lg:py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
+        <p class="text-green-600 dark:text-green-400 text-sm font-medium uppercase">Peta informasi Desa Merbung</p>
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-green-600 my-6">
+          <span class="mr-2">Persebaran</span>
+          <span id="dynamicText"
+            class="inline-block transition-all duration-300 scale-100 rotate-0 text-3xl md:text-4xl">UMKM</span>
+        </h1>
+
+        <p class="text-base-content/80 text-xl">Temukan lokasi, cari rute tercepat, dan dapatkan informasi detail
+          mengenai UMKM dan fasilitas umum dan Administrasi di seluruh wilayah Desa Merbung, Kecamatan
+          Klaten Selatan, Kabupaten Klaten,Jawa Tengah.
+        </p>
+      </div>
+      <!-- Blog Grid -->
+      <div id="Peta" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Blog Card 1 -->
+        <div class="card card-border shadow-none opacity-0 translate-y-6 transition-all duration-700" data-fade>
+          <figure>
+            <img src="https://madaniberkelanjutan.id/wp-content/uploads/2020/12/thumb__730_0_0_0_auto-64.png" alt="Modern house" />
+          </figure>
+          <div class="card-body gap-3">
+            <h5 class="card-title text-xl">Peta UMKM Desa Merbung</h5>
+            <p class="mb-5">
+              Temukan lokasi lengkap usaha mikro, kecil, dan menengah di seluruh wilayah
+              Desa Merbung melalui peta interaktif. Klik untuk mulai menjelajahi!
+            </p>
+            <div class="card-actions">
+              <a href="/peta-umkm/index.html" class="btn bg-green-500 hover:bg-green-600 text-white border-none">
+                Peta UMKM
+                <span class="icon-[tabler--arrow-right] size-5 rtl:rotate-180"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Card 2 -->
+        <div class="card card-border shadow-none opacity-0 translate-y-6 transition-all duration-700" data-fade>
+
+          <figure>
+            <img src="images/kanordesa.jpg" alt="Traditional house" />
+          </figure>
+          <div class="card-body gap-3">
+            <h5 class="card-title text-xl">Peta Fasilitas Umum Desa Merbung</h5>
+            <p class="mb-5">
+              Telusuri peta interaktif yang menampilkan lokasi dan jam operasional fasilitas umum Desa Merbung. Klik
+              untuk mendapatkan informasi lengkap dan rute tercepat ke setiap tempat.
+            </p>
+            <div class="card-actions">
+              <a href="/peta-fasum/index.html" class="btn bg-green-500 hover:bg-green-600 text-white border-none">
+                Peta Fasilitas Umum
+                <span class="icon-[tabler--arrow-right] size-5 rtl:rotate-180"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="card card-border shadow-none opacity-0 translate-y-6 transition-all duration-700" data-fade>
+          <figure>
+            <img src="/images/petaadmin.jpg"
+              alt="kantor desa" />
+          </figure>
+          <div class="card-body gap-3">
+            <h5 class="card-title text-xl">Peta Administrasi Desa Merbung</h5>
+            <p class="mb-5">
+              Klik “Peta Administrasi Desa Merbung” dan kamu akan disambut oleh garis batas desa yang jelas, tanpa
+              gangguan detail berlebihan. Rasakan kemudahan: satu ketukan, peta layar penuh, dan kamu bisa mencubit
+              layar untuk memperbesar
+            <div class="card-actions">
+              <a href="/peta-admin/index.html" class="btn bg-green-500 hover:bg-green-600 text-white border-none">
+                Peta Administrasi Desa
+                <span class="icon-[tabler--arrow-right] size-5 rtl:rotate-180"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="bg-base-100 py-8 sm:py-12 lg:py-16" id="Umkm">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-green-600" data-aos="fade-up">UMKM Unggulan Desa Merbung</h2>
+        <p class="text-base-content/80 text-lg mt-4" data-aos="fade-up" data-aos-delay="100">
+          Temukan usaha lokal yang membuat Desa Merbung istimewa melalui peta interaktif kami!
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8" id="umkmGrid">
+          <div class="card card-border shadow-none" data-aos="fade-right" id="umkmCard1">
+            <figure>
+              <img src="" alt="" class="h-48 w-full object-cover rounded-t-lg" id="umkmImage1" />
+            </figure>
+            <div class="card-body gap-3">
+              <h5 class="card-title text-xl" id="umkmName1"></h5>
+              <p class="text-base-content/80" id="umkmDesc1"></p>
+              <a href="/peta-umkm/index.html" class="btn bg-green-500 hover:bg-green-600 text-white border-none">
+                Lihat di Peta <span class="icon-[tabler--map-pin] size-5"></span>
+              </a>
+            </div>
+          </div>
+          <div class="card card-border shadow-none" data-aos="fade-left" id="umkmCard2">
+            <figure>
+              <img src="" alt="" class="h-48 w-full object-cover rounded-t-lg" id="umkmImage2" />
+            </figure>
+            <div class="card-body gap-3">
+              <h5 class="card-title text-xl" id="umkmName2"></h5>
+              <p class="text-base-content/80" id="umkmDesc2"></p>
+              <a href="/peta-umkm/index.html" class="btn bg-green-500 hover:bg-green-600 text-white border-none">
+                Lihat di Peta <span class="icon-[tabler--map-pin] size-5"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+        
+          <div class="bg-base-100 py-8 sm:py-16 lg:py-24" id="FAQ">
+            <div id="faq" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24" data-aos="fade-up">
+                <p class="text-green-600 dark:text-green-400 text-sm font-medium uppercase">Pertanyaan Umum</p>
+                <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">Pertanyaan Seputar Desa Merbung</h2>
+                <p class="text-base-content/80 text-xl">Temukan jawaban atas pertanyaan umum tentang peta interaktif dan Desa Merbung.</p>
+              </div>
+              <div class="accordion divide-neutral/20 w-full divide-y">
+                <div class="accordion-item" id="peta-interaktif">
+                  <button class="accordion-toggle inline-flex items-center justify-between w-full text-start" aria-controls="peta-interaktif-collapse" aria-expanded="false">
+                    Apa itu Peta Interaktif Desa Merbung?
+                    <span class="icon-[tabler--plus] accordion-item-active:hidden text-base-content block size-4.5 shrink-0"></span>
+                    <span class="icon-[tabler--minus] accordion-item-active:block text-base-content hidden size-4.5 shrink-0"></span>
+                  </button>
+                  <div id="peta-interaktif-collapse" class="accordion-content transition-height w-full overflow-hidden duration-300" aria-labelledby="peta-interaktif" role="region">
+                    <div class="px-5 pb-4">
+                      <p class="text-base-content/80">Peta interaktif adalah alat online untuk menemukan lokasi UMKM, fasilitas umum, dan batas administrasi di Desa Merbung. Anda bisa cari rute, lihat detail usaha, dan jelajahi desa dengan mudah! Klik “Peta UMKM” atau “Peta Fasilitas Umum” untuk mulai.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="umkm-daftar">
+                  <button class="accordion-toggle inline-flex items-center justify-between w-full text-start" aria-controls="umkm-daftar-collapse" aria-expanded="false">
+                    Bagaimana cara UMKM saya terdaftar di peta?
+                    <span class="icon-[tabler--plus] accordion-item-active:hidden text-base-content block size-4.5 shrink-0"></span>
+                    <span class="icon-[tabler--minus] accordion-item-active:block text-base-content hidden size-4.5 shrink-0"></span>
+                  </button>
+                  <div id="umkm-daftar-collapse" class="accordion-content transition-height w-full overflow-hidden duration-300" aria-labelledby="umkm-daftar" role="region">
+                    <div class="px-5 pb-4">
+                      <p class="text-base-content/80">Jika Anda pelaku UMKM di Desa Merbung, hubungi kantor desa via email (<a href="mailto:info@desamerbung.id" class="text-green-600 hover:underline">info@desamerbung.id</a>) atau telepon (+62 123 456 7890) untuk mendaftarkan usaha Anda. Kami akan bantu masukkan ke peta interaktif!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="fasilitas-umum">
+                  <button class="accordion-toggle inline-flex items-center justify-between w-full text-start" aria-controls="fasilitas-umum-collapse" aria-expanded="false">
+                    Apa saja fasilitas umum yang ada di Desa Merbung?
+                    <span class="icon-[tabler--plus] accordion-item-active:hidden text-base-content block size-4.5 shrink-0"></span>
+                    <span class="icon-[tabler--minus] accordion-item-active:block text-base-content hidden size-4.5 shrink-0"></span>
+                  </button>
+                  <div id="fasilitas-umum-collapse" class="accordion-content transition-height w-full overflow-hidden duration-300" aria-labelledby="fasilitas-umum" role="region">
+                    <div class="px-5 pb-4">
+                      <p class="text-base-content/80">Desa Merbung punya fasilitas seperti balai desa, posyandu, masjid, sekolah, dan lapangan olahraga. Cek “Peta Fasilitas Umum” untuk lokasi dan jam operasionalnya.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="menuju-merbung">
+                  <button class="accordion-toggle inline-flex items-center justify-between w-full text-start" aria-controls="menuju-merbung-collapse" aria-expanded="false">
+                    Bagaimana cara menuju Desa Merbung?
+                    <span class="icon-[tabler--plus] accordion-item-active:hidden text-base-content block size-4.5 shrink-0"></span>
+                    <span class="icon-[tabler--minus] accordion-item-active:block text-base-content hidden size-4.5 shrink-0"></span>
+                  </button>
+                  <div id="menuju-merbung-collapse" class="accordion-content transition-height w-full overflow-hidden duration-300" aria-labelledby="menuju-merbung" role="region">
+                    <div class="px-5 pb-4">
+                      <p class="text-base-content/80">Desa Merbung ada di Kecamatan Klaten Selatan, Kabupaten Klaten, Jawa Tengah. Dari pusat kota Klaten, ambil rute ke selatan via Jl. Raya Klaten-Solo, sekitar 15 menit. Lihat peta administrasi untuk panduan!</p>
+                    </div>
+                  </div>
+                </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        
+   <footer id="Contact" class="bg-base-200 py-8 sm:py-12 lg:py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="text-center md:text-left">
+        <a class="text-base-content flex items-center gap-3 text-xl font-bold" href="#">
+          <img src="https://1.bp.blogspot.com/-3fOVmtHrPkg/W2lzDkbSONI/AAAAAAAAAY0/qdMMoN8b46gW1pNe7i7IHhXXpi9UXCzcQCLcBGAs/s1600/Logo%2BVector%2BKabupaten%2BKlaten%2BCDR%2Bdan%2BPNG.png" class="size-8" alt="brand-logo" />
+          Desa Merbung
+        </a>
+        <p class="text-base-content/80 mt-4">Kecamatan Klaten Selatan, Kabupaten Klaten, Jawa Tengah</p>
+      </div>
+      <div class="text-center">
+        <h3 class="text-lg font-semibold text-base-content">Navigasi</h3>
+        <ul class="mt-4 space-y-2">
+          <li><a href="/peta-umkm/index.html" class="text-base-content/80 hover:text-primary">UMKM</a></li>
+          <li><a href="/peta-fasum/index.html" class="text-base-content/80 hover:text-primary">Fasilitas Umum</a></li>
+          <li><a href="/peta-admin/index.html" class="text-base-content/80 hover:text-primary">Administrasi</a></li>
+        </ul>
+      </div>
+      <div class="text-center md:text-right">
+        <h3 class="text-lg font-semibold text-base-content">Kontak Kami</h3>
+        <p class="text-base-content/80 mt-4">Email: info@desamerbung.id</p>
+        <p class="text-base-content/80">Telepon: +62 123 456 7890</p>
+        <p class="text-base-content/80">Alamat: Jl. Merbung No. 1, Klaten</p>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-base-content/80">
+      <p>&copy; 2025 Desa Merbung. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  <script type="module" src="src/home.js"></script>
+  <script type="module" src="./node_modules/flyonui/flyonui.js"></script>
+  
+</body>
+
+</html>

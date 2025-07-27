@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Peta Administrasi Desa Merbung</title>
+  <link rel="icon" href="https://1.bp.blogspot.com/-3fOVmtHrPkg/W2lzDkbSONI/AAAAAAAAAY0/qdMMoN8b46gW1pNe7i7IHhXXpi9UXCzcQCLcBGAs/s1600/Logo%2BVector%2BKabupaten%2BKlaten%2BCDR%2Bdan%2BPNG.png" type="image/png" sizes="192x192">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/global.css">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="../src/js/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+
+  <div class="bg-base-200 flex min-h-screen flex-col">
+    <!-- ---------- HEADER ---------- -->
+    <div class="bg-base-100 border-base-content/20 sticky top-0 z-50 flex border-b">
+      <div class="mx-auto w-full">
+        <nav class="navbar h-12 md:h-14">
+          <div class="navbar-start grow gap-2">
+            <button id="close-search" type="button"
+              class="btn btn-soft self-center btn-square btn-sm lg:hidden bg-transparent" aria-haspopup="dialog"
+              aria-expanded="false" aria-controls="layout-toggle" data-overlay="#layout-toggle">
+              <span class="icon-[tabler--search] size-4.5"></span>
+            </button>
+
+            <!-- Navigation  -->
+            <div class=" flex items-center text-sm relative h-full gap-2">
+              <a href="/" class="btn btn-square btn-primary p-0" aria-label="Icon Button">
+                <span class="icon-[tabler--home] size-6 shrink-0"></span>
+              </a>
+
+              <div class="dropdown relative inline-flex [--auto-close:inside]">
+                <button id="dropdown-transportation" type="button" class="dropdown-toggle btn btn-soft btn-primary "
+                  aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                  <h1 class="text-base-content font-bold  md:text-lg lg:text-xl">Peta Administrasi</h1>
+                  <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+                </button>
+                <div class="dropdown-menu w-52 dropdown-open:opacity-100 hidden" role="menu" aria-orientation="vertical"
+                  aria-labelledby="dropdown-transportation">
+                  <a href="/peta-admin/" class="dropdown-item gap-4">
+                    <input id="dropdown-administrasi" type="radio" name="dropdown-item-radio" checked
+                      class="radio radio-primary" />
+                    <label id="dropdown-administrasi"
+                      class="label-text text-base-content block text-sm font-semibold">Peta Administrasi</label>
+                  </a>
+                  <a href="/peta-umkm/" class="dropdown-item gap-4">
+                    <div id="dropdown-umkm" name="dropdown-item-radio" type="radio" class="radio radio-primary"></div>
+                    <label class="label-text text-base-content text-sm font-semibold">
+                      Persebaran UMKM </label>
+                  </a>
+                  <a href="/peta-fasum/" class="dropdown-item gap-4">
+                    <div id="dropdown-fasum" name="dropdown-item-radio" checked class="radio radio-primary"></div>
+                    <label class="label-text text-base-content text-sm font-semibold">Fasilitas
+                      Umum</label>
+                  </a>
+                </div>
+              </div>
+            </div>
+            </input>
+          </div>
+
+          <div class=" gap-6">
+            <div class="flex items-center">
+              <!-- Theme Dropdown -->
+              <div class="dropdown relative inline-flex [--offset:24]">
+                <button id="dropdown-theme" type="button" class="dropdown-toggle btn btn-sm btn-square btn-text"
+                  aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                  <span id="icon-system" class="icon-[tabler--sun-moon] size-4.5"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-open:opacity-100 hidden w-full max-w-50" role="menu"
+                  aria-orientation="vertical" aria-labelledby="dropdown-theme">
+                  <li>
+                    <input id="radio-light-theme" type="radio" name="theme-dropdown"
+                      class=" btn btn-text w-full justify-start" aria-label="Light" value="mintlify" />
+                  </li>
+                  <li>
+                    <input id="radio-dark-theme" type="radio" name="theme-dropdown"
+                      class=" btn btn-text w-full justify-start" aria-label="Dark" value="spotify" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+      </div>
+    </div>
+    <!-- ---------- END HEADER ---------- -->
+
+    <!-- ---------- MAIN SIDEBAR ---------- -->
+    <aside id="layout-toggle"
+      class="overlay overlay-open:translate-x-0 pt-12 md:pt-14 drawer drawer-start inset-y-0 start-0 hidden h-full [--auto-close:lg] sm:w-96 lg:z-0 lg:block lg:translate-x-0 lg:shadow-none"
+      aria-label="Sidebar" tabindex="-1">
+      <div class="drawer-body border-base-content/20 h-full max-h-full w-full border-e p-0">
+        <div class="flex h-full flex-col">
+          <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3 lg:hidden" aria-label="Close"
+            data-overlay="#layout-toggle">
+            <span class="icon-[tabler--x] size-5"></span>
+          </button>
+
+          <div
+            class="text-base-content h-full overflow-hidden max-h-full pt-1 flex flex-col items-center gap-4 lg:py-6 w-full px-4">
+            <section class="w-full flex shrink-0 flex-col h-fit min-h-1">
+              <div class="input max-w-sm shrink-0">
+                <button id="clear-search-button" class="my-auto me-3 shrink-0 flex">
+                  <span id="search-icon" data-icon="search"
+                    class="data-[icon=search]:icon-[tabler--search] self-center data-[icon=x]:icon-[tabler--x] text-base-content/80 size-5 "></span>
+                </button>
+                <label class="sr-only" for="search-admin">Cari Wilayah Administrasi</label>
+                <input type="text" class="grow" placeholder="Cari Wilayah Administrasi" id="search-admin" />
+              </div>
+              <div data-expanded="false" id="filterContainer"
+                class="p-1 py-2 w-full h-fit max-h-fit shrink-0 data-[expanded=true]:mb-5 relative group data-[expanded=true]:shadow-2xl rounded-2xl shadow-black/40 data-[expanded=true]:scale-101 data-[expanded=true]:bg-base-20 duration-200 transition-all">
+                <div class="flex flex-row ps-1 items-center justify-between w-full">
+                  <p class="font-semibold">Filter RW</p>
+                  <div class="tooltip [--placement:left] [--strategy:absolute]">
+                    <button id="expand-category" type="button"
+                      class="btn btn-primary btn-text aspect-square flex items-center p-1 rounded-full ">
+                      <span
+                        class="group-data-[expanded=true]:icon-[tabler--category-minus] icon-[tabler--category-plus] text-base-content/80 !size-6 shrink-0"></span>
+                    </button>
+                    <span class="tooltip-content z-50 tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
+                      <span id="tooltip-cat" class="tooltip-body">Lihat semua</span>
+                    </span>
+                  </div>
+                </div>
+                <div id="categoryFilter"
+                  class="flex-nowrap px-1 h-7 overflow-x-auto scrollbar-hide horizontal-scroll-container select-none group-data-[expanded=false]:cursor-w-resize flex content-start flex-row gap-2 transition-all duration-200">
+                </div>
+              </div>
+            </section>
+
+            <section id="search-result-container" class="grow h-1 max-h-full w-full overflow-auto flex flex-col gap-2">
+            </section>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- ---------- END MAIN SIDEBAR ---------- -->
+
+    <div class="flex grow flex-col lg:ps-96">
+      <!-- ---------- MAIN CONTENT ---------- -->
+      <main class="flex-1 z-0">
+        <div class="h-full w-full" id="map"></div>
+
+        <button id="routeToggleBtn" class="route-icon">🧭</button>
+        <div class="routing-panel" id="routingPanel">
+          <h3>Buat Rute</h3>
+          <div class="btn-row">
+            <button id="initalPointBtn">Titik Awal</button>
+            <button id="initalResetBtn" class="reset">Reset</button>
+          </div>
+          <div class="btn-row">
+            <button id="endPointBtn">Titik Tujuan</button>
+            <button id="endResetBtn" class="reset">Reset</button>
+          </div>
+          <button id="findRouteBtn" class="find">Cari Rute</button>
+          <div class="route-info" id="routeInfo">Durasi & jarak akan muncul di sini.</div>
+        </div>
+
+        <!-- Legend Dropdown -->
+        <div class="absolute bottom-0 pb-3 ps-3 md:pb-5 md:ps-5 z-[1001]">
+          <div class="dropdown relative inline-flex [--placement=top-start] [--auto-close:false]">
+            <button id="dropdown-legend" type="button" class="dropdown-toggle btn-sm md:btn-md btn btn-primary"
+              aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+              <span class="icon-[tabler--map-up] dropdown-open:icon-[tabler--map-x] size-5 dropdown-open:size-5"></span>
+              Legenda
+            </button>
+            <div
+              class="dropdown-menu text-xs font-medium pb-3 ps-3 md:text-base overflow-hidden dropdown-open:opacity-100 hidden min-w-60"
+              role="menu" aria-orientation="vertical" aria-labelledby="dropdown-false">
+              <div id="legend-content" class="max-h-50 md:max-h-80 lg:max-h-120 overflow-auto ">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <!-- ---------- END MAIN CONTENT ------------>
+    </div>
+  </div>
+
+
+  <!-- Complain Modal -->
+  <div id="form-complain" class="overlay modal overlay-open:opacity-100 overlay-open:duration-300 hidden" role="dialog"
+    tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Lapor Keluhan Wilayah</h3>
+          <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close"
+            data-overlay="#form-complain"><span class="icon-[tabler--x] size-4"></span></button>
+        </div>
+        <form id="complain-form-element">
+          <div class="modal-body pt-0">
+            <div class="mb-2">
+              <label class="label-text" for="name">Nama Anda (Opsional)</label>
+              <input type="text" name="name" class="input input-sm md:input-md" id="name" autoFocus />
+            </div>
+            <div class="mb-0.5 flex gap-2 max-sm:flex-col">
+              <div class="w-full">
+                <label class="label-text" for="email">Email (Opsional)</label>
+                <input type="email" name="email" class="input input-sm md:input-md" id="email" />
+              </div>
+              <div class="w-full">
+                <label class="label-text" for="phone">No Telepon (Opsional)</label>
+                <input type="tel" class="input input-sm md:input-md" name="phone" id="phone" />
+              </div>
+            </div>
+            <div class="mb-2">
+              <label class="label-text" for="region_name">Wilayah Administrasi</label>
+              <input type="text" readonly name="region_name" class="input input-sm md:input-md" id="region_name"
+                autoFocus />
+            </div>
+            <div class="mb-2">
+              <label class="label-text" for="complaint_subject">Judul Keluhan</label>
+              <input type="text" name="complaint_subject" class="input input-sm md:input-md" id="complaint_subject"
+                autoFocus />
+            </div>
+            <div class="">
+              <label class="label-text" for="complaint_text">Isi Keluhan</label>
+              <textarea class="textarea textarea-sm md:textarea-md" name="complaint_text"
+                id="complaint_text"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer flex justify-between text-xs text-error sm:text-sm md:text-base">
+            <span id="form-complain-status" class="flex items-center gap-1"></span>
+            <div class="shrink-0">
+              <button type="button" class="btn btn-soft btn-secondary" data-overlay="#form-complain">Batal</button>
+              <button type="submit" id="form-complain-submit-button" class="btn btn-primary">Kirim</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+  <script type="module" src="../node_modules/flyonui/flyonui.js"></script>
+  <script>
+    let mouseDown = false;
+    let startX, scrollLeft;
+    /**
+     * @type {HTMLDivElement}
+     */
+    const categoryContainer = document.querySelector('.horizontal-scroll-container');
+    const expandBtn = document.getElementById('expand-category');
+    let expanded = false;
+
+    expandBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      categoryContainer.classList.toggle('flex-wrap');
+      categoryContainer.classList.toggle('h-45')
+      categoryContainer.classList.toggle('h-9')
+      categoryContainer.scrollLeft = 0; // Reset scroll position
+      document.getElementById('filterContainer').dataset.expanded = expanded ? 'false' : 'true';
+      document.getElementById('tooltip-cat').innerText = !expanded ? 'Tutup' : 'Lihat semua';
+      if (expanded) {
+        attachScrollEvents();
+      } else {
+        categoryContainer.removeEventListener('mousemove', move, false);
+        categoryContainer.removeEventListener('mousedown', startDragging, false);
+        categoryContainer.removeEventListener('mouseup', stopDragging, false);
+        categoryContainer.removeEventListener('mouseleave', stopDragging, false);
+      }
+
+      expanded = !expanded;
+    });
+
+    function attachScrollEvents() {
+      categoryContainer.addEventListener('mousemove', move, false);
+      categoryContainer.addEventListener('mousedown', startDragging, false);
+      categoryContainer.addEventListener('mouseup', stopDragging, false);
+      categoryContainer.addEventListener('mouseleave', stopDragging, false);
+    }
+
+    /**
+     * @param {MouseEvent} e
+     */
+    const startDragging = (e) => {
+      mouseDown = true;
+      startX = e.pageX - categoryContainer.offsetLeft;
+      scrollLeft = categoryContainer.scrollLeft;
+    }
+
+    const stopDragging = (e) => {
+      mouseDown = false;
+    }
+
+    const move = (e) => {
+      e.preventDefault();
+      if (!mouseDown) { return; }
+      const x = e.pageX - categoryContainer.offsetLeft;
+      const scroll = x - startX;
+      categoryContainer.scrollLeft = scrollLeft - scroll;
+    }
+
+    attachScrollEvents();
+  </script>
+
+
+</body>
+
+</html>
