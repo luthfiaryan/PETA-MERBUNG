@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "tps",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Nama": "Tempat Pengelolaan Sampah (TPS) Merbung", "Latitude": -7.720722452, "Longitude": 110.6006143 }, "geometry": { "type": "Point", "coordinates": [ 110.6006143, -7.720722452 ] } }
+]
+}

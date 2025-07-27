@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "masjid",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Nama": "Masjid Al-Karim", "Latitude": -7.720538446, "Longitude": 110.5886199 }, "geometry": { "type": "Point", "coordinates": [ 110.5886199, -7.720538446 ] } },
+{ "type": "Feature", "properties": { "Nama": "Masjid Al-Huda 2", "Latitude": -7.722564971, "Longitude": 110.593157 }, "geometry": { "type": "Point", "coordinates": [ 110.593157, -7.722564971 ] } },
+{ "type": "Feature", "properties": { "Nama": "Masjid Al-Huda 1", "Latitude": -7.723862549, "Longitude": 110.5945285 }, "geometry": { "type": "Point", "coordinates": [ 110.5945285, -7.723862549 ] } },
+{ "type": "Feature", "properties": { "Nama": "Masjid Fastabiqul Khairat", "Latitude": -7.715477928, "Longitude": 110.6003729 }, "geometry": { "type": "Point", "coordinates": [ 110.6003729, -7.715477928 ] } },
+{ "type": "Feature", "properties": { "Nama": "Masjid & TPA Al Ikhlas", "Latitude": -7.717309057, "Longitude": 110.6005687 }, "geometry": { "type": "Point", "coordinates": [ 110.6005687, -7.717309057 ] } },
+{ "type": "Feature", "properties": { "Nama": "Masjid Jami Krapyak", "Latitude": -7.717713116, "Longitude": 110.5958282 }, "geometry": { "type": "Point", "coordinates": [ 110.5958282, -7.717713116 ] } },
+{ "type": "Feature", "properties": { "Nama": "Masjid Al Muhajirin", "Latitude": -7.717050957, "Longitude": 110.5982703 }, "geometry": { "type": "Point", "coordinates": [ 110.5982703, -7.717050957 ] } },
+{ "type": "Feature", "properties": { "Nama": "Masjid Al-Azhar", "Latitude": -7.720278111, "Longitude": 110.597006 }, "geometry": { "type": "Point", "coordinates": [ 110.597006, -7.720278111 ] } },
+{ "type": "Feature", "properties": { "Nama": "Mushola Baituth Thoyyibah", "Latitude": -7.718700786, "Longitude": 110.5972087 }, "geometry": { "type": "Point", "coordinates": [ 110.5972087, -7.718700786 ] } }
+]
+}

@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "makam",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Nama": "Pemakaman Keluarga Martotiyoso", "Latitude": -7.720585879, "Longitude": 110.594001 }, "geometry": { "type": "Point", "coordinates": [ 110.594001, -7.720585879 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pemakaman Merbung Klaten", "Latitude": -7.720988807, "Longitude": 110.5940307 }, "geometry": { "type": "Point", "coordinates": [ 110.5940307, -7.720988807 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pemakaman Merbung Lama", "Latitude": -7.723232012, "Longitude": 110.5943503 }, "geometry": { "type": "Point", "coordinates": [ 110.5943503, -7.723232012 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pemakaman Keluarga Merbung", "Latitude": -7.723720086, "Longitude": 110.5960298 }, "geometry": { "type": "Point", "coordinates": [ 110.5960298, -7.723720086 ] } }
+]
+}

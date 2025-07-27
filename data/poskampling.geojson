@@ -1,0 +1,24 @@
+{
+"type": "FeatureCollection",
+"name": "poskampling",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Nama": "Poskamling RT001/RW001", "Latitude": -7.72018249, "Longitude": 110.5896959 }, "geometry": { "type": "Point", "coordinates": [ 110.5896959, -7.72018249 ] } },
+{ "type": "Feature", "properties": { "Nama": "Poskamling RT002/RW001", "Latitude": -7.720619335, "Longitude": 110.5897578 }, "geometry": { "type": "Point", "coordinates": [ 110.5897578, -7.720619335 ] } },
+{ "type": "Feature", "properties": { "Nama": "Poskamling RW005", "Latitude": -7.723923614, "Longitude": 110.5958879 }, "geometry": { "type": "Point", "coordinates": [ 110.5958879, -7.723923614 ] } },
+{ "type": "Feature", "properties": { "Nama": "Poskamling RW003", "Latitude": -7.722689798, "Longitude": 110.5933065 }, "geometry": { "type": "Point", "coordinates": [ 110.5933065, -7.722689798 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pos Kamling RT02/RW11", "Latitude": -7.717288374, "Longitude": 110.5975684 }, "geometry": { "type": "Point", "coordinates": [ 110.5975684, -7.717288374 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pos Kamling RT02/RW12", "Latitude": -7.71774613, "Longitude": 110.5983822 }, "geometry": { "type": "Point", "coordinates": [ 110.5983822, -7.71774613 ] } },
+{ "type": "Feature", "properties": { "Nama": "Balai Pertemuan Perum Citra Indah RT01/RW13", "Latitude": -7.716929039, "Longitude": 110.6002773 }, "geometry": { "type": "Point", "coordinates": [ 110.6002773, -7.716929039 ] } },
+{ "type": "Feature", "properties": { "Nama": "Balai Perumahan Citra Merbung Indah RW14", "Latitude": -7.715469023, "Longitude": 110.6000441 }, "geometry": { "type": "Point", "coordinates": [ 110.6000441, -7.715469023 ] } },
+{ "type": "Feature", "properties": { "Nama": "Balai Pertemuan Perum Citra Indah RT08/RW13", "Latitude": -7.718507708, "Longitude": 110.6004846 }, "geometry": { "type": "Point", "coordinates": [ 110.6004846, -7.718507708 ] } },
+{ "type": "Feature", "properties": { "Nama": "Bala Desa Merbung", "Latitude": -7.717260351, "Longitude": 110.594973 }, "geometry": { "type": "Point", "coordinates": [ 110.594973, -7.717260351 ] } },
+{ "type": "Feature", "properties": { "Nama": "Balai Pertemuan RW14", "Latitude": -7.715478921, "Longitude": 110.6001006 }, "geometry": { "type": "Point", "coordinates": [ 110.6001006, -7.715478921 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pos Kamling RW14", "Latitude": -7.715453803, "Longitude": 110.6000014 }, "geometry": { "type": "Point", "coordinates": [ 110.6000014, -7.715453803 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pos Kampling RW 6", "Latitude": -7.716833521, "Longitude": 110.5949832 }, "geometry": { "type": "Point", "coordinates": [ 110.5949832, -7.716833521 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pos Kampling RW 7", "Latitude": -7.716964502, "Longitude": 110.5964746 }, "geometry": { "type": "Point", "coordinates": [ 110.5964746, -7.716964502 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pos Kampling RW 8", "Latitude": -7.718722129, "Longitude": 110.5957698 }, "geometry": { "type": "Point", "coordinates": [ 110.5957698, -7.718722129 ] } },
+{ "type": "Feature", "properties": { "Nama": "Balai RW 8", "Latitude": -7.7183189, "Longitude": 110.5970677 }, "geometry": { "type": "Point", "coordinates": [ 110.5970677, -7.7183189 ] } },
+{ "type": "Feature", "properties": { "Nama": "Pos Kampling RW 9", "Latitude": -7.719917895, "Longitude": 110.5970781 }, "geometry": { "type": "Point", "coordinates": [ 110.5970781, -7.719917895 ] } }
+]
+}
